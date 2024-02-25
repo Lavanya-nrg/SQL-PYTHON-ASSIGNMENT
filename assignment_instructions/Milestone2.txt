@@ -1,0 +1,7 @@
+1. Create 2 csv files emp.csv, dept.csv
+2. fill the csvs with data for employees and departments (do not just dump via sql)
+3. Using python program - write import.py script that can read both csvs and populate the emp and dept tables (db connectivity via python)
+4. assume tables may already have data so so not delete existing data. just append it.
+5. script should not fail abruptly due to issues with one or more records in csv, should continue and process next valid records
+6. any errors or issues during the run should be logged to a output.log file
+ 

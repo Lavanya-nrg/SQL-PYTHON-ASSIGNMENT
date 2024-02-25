@@ -1,0 +1,14 @@
+Consider you having a 'company' database with 2 tables employee and department. Use any database mysql or postgres
+ 
+employee has - id, emp_code, full name, gender, birthdate,designation, joining_date,salary,dept_id, nationality
+ 
+department has - id, dept_name, dept_head_id
+ 
+dept_id and dept_head_id are foreign keys.
+ 
+Do the following - Milestone 1
+1. Create a sql script to create these tables from scratch. drop and create if exists
+2. Create a script to insert data into both these tables (sql statements)
+3. You can be creative with data and diversity
+4. After you have a fully populated database and tables, run few sample queries - avg salary across company, avg salary dept wise, dept which spends max on salary, dept which is male dominated, month in which maximum Indian emps celebrate their birthday, avg salary of all dept heads
+ 

@@ -1,0 +1,1 @@
+Using pandas perform same sql operations that you did in milestone 1 -avg salary across company, avg salary dept wise, dept which spends max on salary, dept which is male dominated, month in which maximum Indian emps celebrate their birthday, avg salary of all dept heads
