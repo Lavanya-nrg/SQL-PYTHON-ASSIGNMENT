@@ -26,7 +26,15 @@ pip install -r requirements.txt
 ```
 
 ## Database Setup:
-Set up the sample database by following the instructions provided in the database_setup.md file.
+Set up the sample database by following iinstructions:-
+1)Download and Install MySQL Server and MySQL Workbench
+2)Launch MySQL Workbench
+3)Connect to MySQL Server
+4)Create a New Schema (Database)
+5)Design Tables and Relationships (Optional)
+6)Execute SQL Queries (Optional)
+7)Commit Changes
+8)Backup and Restore (Optional)
 
 Complete the Tasks: Complete the tasks outlined in the assignment_instructions.md file using SQL queries and Python programming.
 
