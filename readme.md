@@ -36,8 +36,6 @@ The repository is structured as follows:
 
 `assignment_instructions.md`: Contains detailed instructions for completing the assignment tasks.
 
-`database_setup.md`: Provides instructions for setting up the sample database.
-
 `data/`: Directory containing sample data files.
 
 `assignment_solutions/`: Directory containing Python scripts for interacting with the database and performing data analysis.
