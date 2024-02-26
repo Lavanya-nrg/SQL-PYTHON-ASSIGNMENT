@@ -4,9 +4,9 @@ import urllib.parse
 
 hostname='127.0.0.1'
 username='root'
-password='India@123'
+password='Lavanya_01'
 port=3306
-database='company'
+database='Company'
 
 encoded_password = urllib.parse.quote_plus(password)
 engine=create_engine('mysql+pymysql://'+username+':'+encoded_password+'@'+hostname+':'+str(port)+'/'+database)
