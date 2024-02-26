@@ -3,7 +3,10 @@ import mysql.connector  # For MySQL database connectivity
 import csv  # For reading CSV files
 
 # Establishing connection to the MySQL database
-conn = mysql.connector.MySQLConnection(user="enteryourdeviceuser", host='enteryourdevicehost', port=enterdeviceport, database='Company', password='enteryourpasword')
+conn = mysql.connector.MySQLConnection(hostname='abc.x.y.z' (enter device hostname)
+username='abc' (enter device username)
+password='abcxyz'(enter device password)
+port=7777 (enter port number), database='Company', password='enteryourpasword')
 
 # Configuring logging settings
 logging.basicConfig(filename='Logs/output.log', level=logging.ERROR, format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
