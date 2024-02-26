@@ -1,4 +1,4 @@
-mport logging , mysql.connector
+import logging , mysql.connector
 import csv
 
 conn = mysql.connector.MySQLConnection(user ="root",host='127.0.0.1',port=3306,database='Company',password='Lavanya_01')
