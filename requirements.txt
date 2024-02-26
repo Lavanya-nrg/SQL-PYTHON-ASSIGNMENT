@@ -2,3 +2,6 @@ pymysql
 pyodbc
 pandas
 sqlalchemy
+logging
+mysql.connector
+csv
