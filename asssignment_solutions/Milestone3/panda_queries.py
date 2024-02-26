@@ -2,10 +2,10 @@ from sqlalchemy import create_engine
 import pandas as pd
 import urllib.parse
 
-hostname='127.0.0.1'
-username='root'
-password='Lavanya_01'
-port=3306
+hostname='abc.x.y.z' (enter device hostname)
+username='abc' (enter device username)
+password='abcxyz'(enter device password)
+port=7777 (enter port number)
 database='Company'
 
 encoded_password = urllib.parse.quote_plus(password)
