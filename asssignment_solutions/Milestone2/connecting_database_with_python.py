@@ -17,7 +17,7 @@ cursor = conn.cursor()
 # Inserting data into the employee table if exists append data
 
 try:
-    with open('dataa/Employee_Table.csv', mode='r') as file:
+    with open('data/Employee_Table.csv', mode='r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip header row
         try:
@@ -30,10 +30,10 @@ try:
 except Exception as e:
     logging.error(f"An error occurred while executing employee table: {e}")
     
-# Inserting data into the department table if exists aappend data
+# Inserting data into the department table if exists append data
 
 try:
-    with open('dept.csv', mode='r') as file:
+    with open('data/Department_Table.csv', mode='r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip header row
         try:
