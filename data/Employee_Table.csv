@@ -1,61 +1,61 @@
-id	emp_code	full_name	gender	birthdate	designation	joining_date	salary	dept_id	nationality
-1	E1001	John Doe	Male	1985-03-15	Senior Manager	2010-05-20	80000	1	American
-2	E1002	Alice Smith	Female	1988-07-25	Software Eng	2015-02-10	60000	2	British
-3	E1003	Priya Patel	Female	1990-09-12	HR Manager	2012-08-18	75000	3	Indian
-4	E1004	Rajesh Kumar	Male	1987-11-05	Data Analyst	2016-04-30	55000	4	Indian
-5	E1005	Mei Chen	Female	1992-04-20	QA Engineer	2014-10-12	58000	1	Chinese
-6	E1006	Asha Singh	Female	1989-12-28	Software Eng	2013-06-08	62000	2	Indian
-7	E1007	Li Wei	Male	1991-08-03	Sales Rep	2017-11-22	50000	3	Chinese
-8	E1008	Ananya Desai	Female	1986-06-17	Project Manager	2009-09-05	85000	4	Indian
-9	E1009	David Johnson	Male	1993-01-10	Intern	2022-01-15	35000	1	American
-10	E1010	Natasha Fernandez	Female	1995-05-30	Marketing	2018-07-03	60000	2	Spanish
-11	E1011	Vivek Patel	Male	1987-09-05	Accountant	2019-03-20	45000	3	Indian
-12	E1012	Emily Wang	Female	1991-12-18	UI/UX Designer	2016-08-25	65000	4	Chinese
-13	E1013	Sanjay Gupta	Male	1984-09-22	Software Eng	2013-02-14	70000	1	Indian
-14	E1014	Sophia Lee	Female	1988-03-08	Data Scientist	2010-11-05	75000	2	Korean
-15	E1015	Rahul Sharma	Male	1994-09-10	Marketing	2017-06-17	55000	3	Indian
-16	E1016	Emma Taylor	Female	1990-06-03	Sales Rep	2015-09-30	48000	4	American
-17	E1017	Akshay Singh	Male	1992-09-28	QA Engineer	2018-04-22	60000	1	Indian
-18	E1018	Jasmine Patel	Female	1986-07-15	HR Manager	2012-01-08	72000	2	Indian
-19	E1019	Ryan Chen	Male	1989-04-19	Software Eng	2014-08-12	67000	3	Chinese
-20	E1020	Maya Gupta	Female	1993-02-14	Project Manager	2019-11-10	80000	4	Indian
-21	E1021	Arjun Kumar	Male	1985-09-03	Data Analyst	2011-06-28	53000	1	Indian
-22	E1022	Lily Wang	Female	1988-12-25	QA Engineer	2016-03-18	57000	2	Chinese
-23	E1023	Rohan Sharma	Male	1990-09-15	Sales Rep	2017-10-02	52000	3	Indian
-24	E1024	Mia Johnson	Female	1995-01-20	Marketing	2020-05-07	58000	4	American
-25	E1025	Aarav Patel	Male	1987-09-18	UI/UX Designer	2013-11-30	70000	1	Indian
-26	E1026	Ava Lee	Female	1992-07-10	Software Eng	2018-01-14	64000	2	Chinese
-27	E1027	Rohit Gupta	Male	1986-09-09	Data Scientist	2012-04-05	76000	3	Indian
-28	E1028	Zoe Taylor	Female	1994-05-03	Marketing	2019-09-22	54000	4	British
-29	E1029	Dev Patel	Male	1988-09-12	Software Eng	2014-07-08	68000	1	Indian
-30	E1030	Emily Chen	Female	1991-03-28	HR Manager	2016-12-15	73000	2	Chinese
-31	E1031	Surya Kumar	Male	1989-09-05	Project Manager	2015-04-20	78000	3	Indian
-32	E1032	Sofia Gupta	Female	1993-06-15	Data Analyst	2020-10-10	59000	4	Indian
-33	E1033	Ryan Wang	Male	1984-09-22	QA Engineer	2011-03-18	61000	1	Chinese
-34	E1034	Natasha Patel	Female	1988-12-25	Sales Rep	2017-08-02	53000	2	Indian
-35	E1035	Ethan Chen	Male	1990-09-15	Software Eng	2018-11-20	67000	3	Chinese
-36	E1036	Mia Sharma	Female	1995-01-20	Project Manager	2021-06-07	81000	4	Indian
-37	E1037	Aryan Kumar	Male	1985-09-03	Data Analyst	2012-09-28	54000	1	Indian
-38	E1038	Olivia Wang	Female	1988-12-25	QA Engineer	2017-04-15	58000	2	Chinese
-39	E1039	Arjun Gupta	Male	1990-09-15	Sales Rep	2018-02-10	52000	3	Indian
-40	E1040	Mia Johnson	Female	1995-01-20	Marketing	2022-05-17	57000	4	American
-41	E1041	Ananya Patel	Female	1987-09-18	UI/UX Designer	2013-12-30	69000	1	Indian
-42	E1042	Aiden Lee	Male	1992-07-10	Software Eng	2019-02-14	65000	2	Chinese
-43	E1043	Aarav Gupta	Male	1986-09-09	Data Scientist	2015-05-05	77000	3	Indian
-44	E1044	Ava Taylor	Female	1994-05-03	Marketing	2020-09-22	55000	4	British
-45	E1045	Dev Singh	Male	1988-09-12	Software Eng	2014-10-08	69000	1	Indian
-46	E1046	Emily Wang	Female	1991-03-28	HR Manager	2019-07-15	74000	2	Chinese
-47	E1047	Surya Gupta	Male	1989-09-05	Project Manager	2016-02-20	79000	3	Indian
-48	E1048	Sofia Kumar	Female	1993-06-15	Data Analyst	2021-11-10	60000	4	Indian
-49	E1049	Ryan Wang	Male	1984-09-22	QA Engineer	2012-07-18	62000	1	Chinese
-50	E1050	Natasha Gupta	Female	1988-12-25	Sales Rep	2018-09-02	54000	2	Indian
-51	E1051	Ethan Chen	Male	1990-09-15	Software Eng	2019-12-20	66000	3	Chinese
-52	E1052	Mia Sharma	Female	1995-01-20	Project Manager	2022-07-07	82000	4	Indian
-53	E1053	Aryan Kumar	Male	1985-09-03	Data Analyst	2013-02-28	55000	1	Indian
-54	E1054	Olivia Wang	Female	1988-12-25	QA Engineer	2018-05-15	59000	2	Chinese
-55	E1055	Arjun Gupta	Male	1990-09-15	Sales Rep	2015-10-10	53000	3	Indian
-56	E1056	Mia Johnson	Female	1995-01-20	Marketing	2023-02-17	58000	4	American
-57	E1057	Ananya Patel	Female	1987-09-18	UI/UX Designer	2014-01-30	70000	1	Indian
-58	E1058	Aiden Lee	Male	1992-07-10	Software Eng	2020-04-14	67000	2	Chinese
-59	E1059	Aarav Gupta	Male	1986-09-09	Data Scientist	2016-09-05	78000	3	Indian
-60	E1060	Ava Taylor	Female	1994-05-03	Marketing	2021-12-22	56000	4	British
+id,emp_code,full_name,gender,birthdate,designation,joining_date,salary,dept_id,nationality
+1,E1001,John Doe,Male,1985-03-15,Senior Manager,2010-05-20,80000,1,American
+2,E1002,Alice Smith,Female,1988-07-25,Software Eng,2015-02-10,60000,2,British
+3,E1003,Priya Patel,Female,1990-09-12,HR Manager,2012-08-18,75000,3,Indian
+4,E1004,Rajesh Kumar,Male,1987-11-05,Data Analyst,2016-04-30,55000,4,Indian
+5,E1005,Mei Chen,Female,1992-04-20,QA Engineer,2014-10-12,58000,1,Chinese
+6,E1006,Asha Singh,Female,1989-12-28,Software Eng,2013-06-08,62000,2,Indian
+7,E1007,Li Wei,Male,1991-08-03,Sales Rep,2017-11-22,50000,3,Chinese
+8,E1008,Ananya Desai,Female,1986-06-17,Project Manager,2009-09-05,85000,4,Indian
+9,E1009,David Johnson,Male,1993-01-10,Intern,2022-01-15,35000,1,American
+10,E1010,Natasha Fernandez,Female,1995-05-30,Marketing,2018-07-03,60000,2,Spanish
+11,E1011,Vivek Patel,Male,1987-09-05,Accountant,2019-03-20,45000,3,Indian
+12,E1012,Emily Wang,Female,1991-12-18,UI/UX Designer,2016-08-25,65000,4,Chinese
+13,E1013,Sanjay Gupta,Male,1984-09-22,Software Eng,2013-02-14,70000,1,Indian
+14,E1014,Sophia Lee,Female,1988-03-08,Data Scientist,2010-11-05,75000,2,Korean
+15,E1015,Rahul Sharma,Male,1994-09-10,Marketing,2017-06-17,55000,3,Indian
+16,E1016,Emma Taylor,Female,1990-06-03,Sales Rep,2015-09-30,48000,4,American
+17,E1017,Akshay Singh,Male,1992-09-28,QA Engineer,2018-04-22,60000,1,Indian
+18,E1018,Jasmine Patel,Female,1986-07-15,HR Manager,2012-01-08,72000,2,Indian
+19,E1019,Ryan Chen,Male,1989-04-19,Software Eng,2014-08-12,67000,3,Chinese
+20,E1020,Maya Gupta,Female,1993-02-14,Project Manager,2019-11-10,80000,4,Indian
+21,E1021,Arjun Kumar,Male,1985-09-03,Data Analyst,2011-06-28,53000,1,Indian
+22,E1022,Lily Wang,Female,1988-12-25,QA Engineer,2016-03-18,57000,2,Chinese
+23,E1023,Rohan Sharma,Male,1990-09-15,Sales Rep,2017-10-02,52000,3,Indian
+24,E1024,Mia Johnson,Female,1995-01-20,Marketing,2020-05-07,58000,4,American
+25,E1025,Aarav Patel,Male,1987-09-18,UI/UX Designer,2013-11-30,70000,1,Indian
+26,E1026,Ava Lee,Female,1992-07-10,Software Eng,2018-01-14,64000,2,Chinese
+27,E1027,Rohit Gupta,Male,1986-09-09,Data Scientist,2012-04-05,76000,3,Indian
+28,E1028,Zoe Taylor,Female,1994-05-03,Marketing,2019-09-22,54000,4,British
+29,E1029,Dev Patel,Male,1988-09-12,Software Eng,2014-07-08,68000,1,Indian
+30,E1030,Emily Chen,Female,1991-03-28,HR Manager,2016-12-15,73000,2,Chinese
+31,E1031,Surya Kumar,Male,1989-09-05,Project Manager,2015-04-20,78000,3,Indian
+32,E1032,Sofia Gupta,Female,1993-06-15,Data Analyst,2020-10-10,59000,4,Indian
+33,E1033,Ryan Wang,Male,1984-09-22,QA Engineer,2011-03-18,61000,1,Chinese
+34,E1034,Natasha Patel,Female,1988-12-25,Sales Rep,2017-08-02,53000,2,Indian
+35,E1035,Ethan Chen,Male,1990-09-15,Software Eng,2018-11-20,67000,3,Chinese
+36,E1036,Mia Sharma,Female,1995-01-20,Project Manager,2021-06-07,81000,4,Indian
+37,E1037,Aryan Kumar,Male,1985-09-03,Data Analyst,2012-09-28,54000,1,Indian
+38,E1038,Olivia Wang,Female,1988-12-25,QA Engineer,2017-04-15,58000,2,Chinese
+39,E1039,Arjun Gupta,Male,1990-09-15,Sales Rep,2018-02-10,52000,3,Indian
+40,E1040,Mia Johnson,Female,1995-01-20,Marketing,2022-05-17,57000,4,American
+41,E1041,Ananya Patel,Female,1987-09-18,UI/UX Designer,2013-12-30,69000,1,Indian
+42,E1042,Aiden Lee,Male,1992-07-10,Software Eng,2019-02-14,65000,2,Chinese
+43,E1043,Aarav Gupta,Male,1986-09-09,Data Scientist,2015-05-05,77000,3,Indian
+44,E1044,Ava Taylor,Female,1994-05-03,Marketing,2020-09-22,55000,4,British
+45,E1045,Dev Singh,Male,1988-09-12,Software Eng,2014-10-08,69000,1,Indian
+46,E1046,Emily Wang,Female,1991-03-28,HR Manager,2019-07-15,74000,2,Chinese
+47,E1047,Surya Gupta,Male,1989-09-05,Project Manager,2016-02-20,79000,3,Indian
+48,E1048,Sofia Kumar,Female,1993-06-15,Data Analyst,2021-11-10,60000,4,Indian
+49,E1049,Ryan Wang,Male,1984-09-22,QA Engineer,2012-07-18,62000,1,Chinese
+50,E1050,Natasha Gupta,Female,1988-12-25,Sales Rep,2018-09-02,54000,2,Indian
+51,E1051,Ethan Chen,Male,1990-09-15,Software Eng,2019-12-20,66000,3,Chinese
+52,E1052,Mia Sharma,Female,1995-01-20,Project Manager,2022-07-07,82000,4,Indian
+53,E1053,Aryan Kumar,Male,1985-09-03,Data Analyst,2013-02-28,55000,1,Indian
+54,E1054,Olivia Wang,Female,1988-12-25,QA Engineer,2018-05-15,59000,2,Chinese
+55,E1055,Arjun Gupta,Male,1990-09-15,Sales Rep,2015-10-10,53000,3,Indian
+56,E1056,Mia Johnson,Female,1995-01-20,Marketing,2023-02-17,58000,4,American
+57,E1057,Ananya Patel,Female,1987-09-18,UI/UX Designer,2014-01-30,70000,1,Indian
+58,E1058,Aiden Lee,Male,1992-07-10,Software Eng,2020-04-14,67000,2,Chinese
+59,E1059,Aarav Gupta,Male,1986-09-09,Data Scientist,2016-09-05,78000,3,Indian
+60,E1060,Ava Taylor,Female,1994-05-03,Marketing,2021-12-22,56000,4,British
