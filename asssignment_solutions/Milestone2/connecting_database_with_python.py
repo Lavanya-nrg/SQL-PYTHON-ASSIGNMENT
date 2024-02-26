@@ -1,9 +1,18 @@
-import logging , mysql.connector
-import csv
+import logging  # For logging errors
+import mysql.connector  # For MySQL database connectivity
+import csv  # For reading CSV files
 
-conn = mysql.connector.MySQLConnection(user ="root",host='127.0.0.1',port=3306,database='Company',password='Lavanya_01')
-logging.basicConfig(filename='Logs/output.log',level=logging.ERROR,format='%(asctime)s %(levelname)-8s %(message)s',datefmt='%Y-%m-%d %H:%M:%S')
+# Establishing connection to the MySQL database
+conn = mysql.connector.MySQLConnection(user="enteryourdeviceuser", host='enteryourdevicehost', port=enterdeviceport, database='Company', password='enteryourpasword')
+
+# Configuring logging settings
+logging.basicConfig(filename='Logs/output.log', level=logging.ERROR, format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+
+# Creating a cursor object to execute SQL queries
 cursor = conn.cursor()
+
+# Inserting data into the employee table if exists append data
+
 try:
     with open('dataa/Employee_Table.csv', mode='r') as file:
         reader = csv.reader(file)
@@ -17,6 +26,8 @@ try:
             logging.error(f"An error occured while appending data in employee table: {e}")
 except Exception as e:
     logging.error(f"An error occurred while executing employee table: {e}")
+    
+# Inserting data into the department table if exists aappend data
 
 try:
     with open('dept.csv', mode='r') as file:
