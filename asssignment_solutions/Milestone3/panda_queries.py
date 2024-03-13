@@ -1,53 +1,49 @@
-from sqlalchemy import create_engine
-import pandas as pd
-import urllib.parse
+def execute_query_to_df(query):
+    return pd.read_sql_query(query,conn)
 
-hostname='abc.x.y.z' #(enter device hostname)
-username='abc' #(enter device username)
-password='abcxyz'#(enter device password)
-port=7777 #(enter port number)
-database='Company'
+employee_query="SELECT * FROM employee;"
+department_query="SELECT * FROM department;"
 
-encoded_password = urllib.parse.quote_plus(password)
-engine=create_engine('mysql+pymysql://'+username+':'+encoded_password+'@'+hostname+':'+str(port)+'/'+database)
-
-conn=engine.connect()
-
-def AvgSalaryOfEmployee():
-    sql_query1=pd.read_sql_query("SELECT ROUND(AVG(E.SALARY)) AS AVGSAL FROM Employee_Table;",conn)
-    df=pd.DataFrame(sql_query1)
-    print(df)
+employee_df=execute_query_to_df(employee_query)
+department_df=execute_query_to_df(department_query)
 
 
-def AvgSalaryDeptWise():
-    sql_query2=pd.read_sql_query("SELECT E.DEPT_ID,D.DEPT_NAME,ROUND(AVG(E.SALARY),2) AS AVGSAL FROM Employee_Table AS E INNER JOIN Department_Table AS D ON E.DEPT_ID=D.DEPT_ID GROUP BY D.DEPT_ID ORDER BY E.DEPT_ID ASC;",conn)
-    df=pd.DataFrame(sql_query2)
-    print(df)
+# def AvgSalaryOfEmployee():
+#     df=employee_df['salary'].mean()
+#     print(df)
 
-def DeptSpendMaxSalary():
-    sql_query3=pd.read_sql_query("SELECT d.deptName AS department, SUM(e.salary) AS total_salary_spent FROM department d JOIN employee e ON d.id = e.deptId GROUP BY d.deptName ORDER BY total_salary_spent DESC LIMIT 1",conn)
-    df=pd.DataFrame(sql_query3)
-    print(df)
 
-def DeptMaleDominated():
-    sql_query4=pd.read_sql_query("SELECT E.DEPT_ID,D.DEPT_NAME,SUM(E.SLARY) AS DEPTSAL FROM Employee_Table AS E INNER JOIN Department_Table AS D ON D.DEPT_ID=E.DEPT_ID GROUP BY E.DEPT_ID  ORDER BY DEPTSAL LIMIT 1;",conn)
-    df=pd.DataFrame(sql_query4)
-    print(df)
+# def AvgSalaryDeptWise():
+#     merged_df=pd.merge(employee_df,department_df,left_on='deptId',right_on='id')
+#     avg_salary_dept_wise=merged_df.groupby('deptName')['salary'].mean()
+#     print(avg_salary_dept_wise)
 
-def MonthMaxIndianCelebrateBirthday():
-    sql_query5=pd.read_sql_query("SELECT EXTRACT(MONTH FROM DATE_OF_BIRTH) AS BMONTH FROM Employee_Table WHERE NATIONALITY='INDIAN' GROUP BY BMONTH ORDER BY BMONTH DESC LIMIT 1;",conn)
-    df=pd.DataFrame(sql_query5)
-    print(df)
+# def DeptSpendMaxSalary():
+#     merged_df=pd.merge(employee_df,department_df,left_on='deptId',right_on='id')
+#     dept_total_salary=merged_df.groupby('deptName')['salary'].sum()
+#     dept_max_salary=dept_total_salary.idxmax()
+#     print(dept_max_salary)
+
+# def DeptMaleDominated():
+#     merged_df=pd.merge(employee_df,department_df,left_on='deptId',right_on='id')
+#     male_employees=merged_df[merged_df['gender']=='Male']
+#     male_employee_count=male_employees.groupby('deptName').size().reset_index(name='male_count')
+#     mae_dominated_dept=male_employee_count.loc[male_employee_count['male_count'].idxmax()]['deptName']
+#     print(mae_dominated_dept)
+
+# def MonthMaxIndianCelebrateBirthday():
+#     indian_employees=employee_df[employee_df['nationality']=='India']
+#     max_birth_month=indian_employees['birthDate'].apply(lambda x:pd.to_datetime(x).month).mode()
+#     print(max_birth_month)
 
 def AvgSalaryDeptHeads():
-    sql_query6=pd.read_sql_query("SELECT D.DEPT_HEAD_ID,ROUND(AVG(E.SALARY),2) AS AVGHEADSAL FROM E_T AS E INNER JOIN Department_Table AS D GROUP BY D.DEPT_HEAD_ID ORDER BY D.DEPT_HEAD_ID ASC;",conn)
-    df=pd.DataFrame(sql_query6)
-    print(df)
+    avg_head_salary=employee_df[employee_df['isHead']=='Yes']['salary'].mean()
+    print(avg_head_salary)
 
 
-AvgSalaryOfEmployee()
-AvgSalaryDeptWise()
-DeptSpendMaxSalary()
-DeptMaleDominated()
-MonthMaxIndianCelebrateBirthday()
+#AvgSalaryOfEmployee()
+#AvgSalaryDeptWise()
+#DeptSpendMaxSalary()
+#DeptMaleDominated()
+#MonthMaxIndianCelebrateBirthday()
 AvgSalaryDeptHeads()
